@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aitorpagan.maddamfest.fragment.EventFragment"
+    android:isScrollContainer="true"
+    android:background="@color/cosmosColor">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="true"
+        android:layout_marginEnd="0dp"
+        android:clipToPadding="true"
+        android:id="@+id/scrollViewtwo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="4"
+            android:layout_margin="5dp"
+            android:paddingBottom="0dp"
+            android:id="@+id/gridlayout"
+            style="@style/contentStyle">
+
+            <TextView
+                android:text="Fecha: "
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:text="Lugar:"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/fechaevento"
+                android:text="27/04/16"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/lugarevento"
+                android:text="Sala"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:text="Artistas:"
+                android:textStyle="bold"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:text="Evento:"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:text="50€"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:text="Abono:"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:text="100€"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:text="SHE &amp; HIM, THE XX, DAUGHTER"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artistsText"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FFFFFF"/>
+
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventFragmentImage"
+            android:src="@drawable/maddam_urban"
+            android:adjustViewBounds="true" />
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            tools:context="aitorpagan.maddamfest.fragment.EventFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="urbanColor">#E1378C</color>
+    <color name="sinkColor">#CED726</color>
+    <color name="cosmosColor">#64C2C9</color>
+    <color name="fourthColor">#E73E2F</color>
+</resources>

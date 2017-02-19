@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_camera" android:icon="@mipmap/ic_urban_event"
+            android:title="Maddam Urban" />
+        <item android:id="@+id/nav_gallery" android:icon="@mipmap/ic_cosmo_event"
+            android:title="Maddam Cosmos" />
+        <item android:id="@+id/nav_slideshow" android:icon="@mipmap/ic_sink_event"
+            android:title="Maddam Sink" />
+    </group>
+
+    <item android:title="Shopping">
+        <menu>
+            <item android:checkable="true" android:id="@+id/nav_share" android:icon="@mipmap/ic_carrito_logo"
+                android:title="Tienda" />
+            <item android:checkable="true" android:id="@+id/nav_send" android:icon="@mipmap/ic_tickets"
+                android:title="Entradas" />
+        </menu>
+    </item>
+
+</menu>
